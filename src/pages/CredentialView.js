@@ -12,11 +12,21 @@ const CredentialView = (prop) => {
     console.log(name)
 
     return (
+
         <div>
-            <Member imageURL={"/profiles/" + name + ".jpeg"} 
-                    firstName={name} 
-                    lastName="West"
-                    DOB="12/04/2000"/>
+            {
+                name === "Tom"?
+                <Member imageURL={"/profiles/" + name + ".jpeg"} 
+                firstName={name} 
+                lastName="West1"
+                DOB="12/04/2000"
+                address="3650 21st St, San Francisco, United States"/> : 
+                <Member imageURL={"/profiles/Jerry.jpeg"} 
+                firstName={name} 
+                lastName="West"
+                DOB="12/04/2000"/>
+            }
+
         </div>
     )
 };

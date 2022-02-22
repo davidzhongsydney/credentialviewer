@@ -12,6 +12,7 @@ const Member = (props) => {
             {props.firstName !== undefined? <p className="text-sm text-grey-darker  font-bold pt-3 mb-1">First Name: {props.firstName}</p> : ""}
             {props.lastName !== undefined? <p className="text-sm text-grey-darker  font-bold pt-3 mb-1">Last Name: {props.lastName}</p> : ""}
             {props.DOB !== undefined? <p className="text-sm text-grey-darker  font-bold pt-3 mb-1">Date of Birth: {props.DOB}</p> : ""}
+            {props.address !== undefined? <p className="text-sm text-grey-darker  font-bold pt-3 mb-1">Address: {props.address}</p> : ""}
         </div>
     </div>
     )
