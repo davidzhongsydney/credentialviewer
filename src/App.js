@@ -2,7 +2,8 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Link
 } from "react-router-dom";
 import Home from './pages/Home'
 import CredentialView from './pages/CredentialView';
@@ -15,10 +16,11 @@ function App() {
   return (
 
       <Router>
-        {/* <div>
-          <Link to="/">Home</Link>
-          <Link to="/cendential">Credential</Link>
-        </div> */}
+        <div>
+          <Link to="/">Home</Link> <br/>
+          <Link to="/cendential/Tom">Credential Tom</Link><br/>
+          <Link to="/cendential/Jerry">Credential Jerry</Link>
+        </div>
         <Switch>
           <Route exact path="/">
             <Home  />
