@@ -18,15 +18,15 @@ function App() {
       <Router>
         <div>
           <Link to="/">Home</Link> <br/>
-          <Link to="/cendential/Tom">Credential Tom</Link><br/>
-          <Link to="/cendential/Jerry">Credential Jerry</Link>
+          <Link to="/credential/Tom">Credential Tom</Link><br/>
+          <Link to="/credential/Jerry">Credential Jerry</Link>
         </div>
         <Switch>
           <Route exact path="/">
             <Home  />
           </Route>
 
-          <Route path="/cendential/:name">
+          <Route path="/credential/:name">
             <CredentialView  />
           </Route>
         </Switch>
