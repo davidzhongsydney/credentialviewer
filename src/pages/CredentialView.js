@@ -20,11 +20,13 @@ const CredentialView = (prop) => {
                 firstName={name} 
                 lastName="West1"
                 DOB="12/04/2000"
-                address="3650 21st St, San Francisco, United States"/> : 
+                address="3650 21st St, San Francisco, United States"
+                verify = "/verified.png" /> : 
                 <Member imageURL={"/profiles/Jerry.jpeg"} 
                 firstName={name} 
                 lastName="West"
-                DOB="12/04/2000"/>
+                DOB="12/04/2000"
+                verify = "/unverified.png" />
             }
 
         </div>
